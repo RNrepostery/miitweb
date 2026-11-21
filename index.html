@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MIIT Robo AI Preschool - India's First AI & Robotics Preschool</title>
   
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
   
   <!-- Google Fonts: Nunito & Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,72 +15,6 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Nunito', 'sans-serif'],
-            heading: ['Poppins', 'sans-serif'],
-          },
-          colors: {
-            brand: {
-              pink: '#FF1A75',
-              pinkHover: '#E60067',
-              pinkLight: '#FFF0F6',
-              blue: '#0084FF',
-              blueDark: '#0056B3',
-              blueLight: '#F0F8FF',
-              yellow: '#FFB800',
-              yellowLight: '#FFF8E7',
-              green: '#22C55E',
-              greenLight: '#F0FDF4',
-              purple: '#A855F7',
-              purpleLight: '#F3F0FF',
-              navy: '#0E1B38',
-              cardBg: '#FFFFFF',
-              graySoft: '#F8FAFC'
-            }
-          },
-          boxShadow: {
-            'playful': '0 10px 25px -5px rgba(255, 26, 117, 0.15)',
-            'card': '0 8px 30px rgba(0, 0, 0, 0.05)',
-            'bubble': '0 12px 30px rgba(0, 132, 255, 0.18)'
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    /* Custom playful decorative animations and styles */
-    @keyframes float {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-8px) rotate(1.5deg); }
-    }
-    @keyframes pulseSoft {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.04); }
-    }
-    .animate-float {
-      animation: float 4s ease-in-out infinite;
-    }
-    .animate-pulse-soft {
-      animation: pulseSoft 3s ease-in-out infinite;
-    }
-    
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #F0F8FF;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #FF1A75;
-      border-radius: 9999px;
-    }
-  </style>
 </head>
 <body class="bg-[#F8FAFC] text-slate-800 antialiased font-sans selection:bg-brand-pink selection:text-white">
 
@@ -309,7 +242,7 @@
             <!-- Card 2: Nursery -->
             <div class="rounded-2xl border border-amber-100 overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow group flex flex-col">
               <div class="h-32 bg-amber-50 overflow-hidden relative">
-                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=400&q=80" alt="Nursery kid" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                <img src="./images/nur.jpeg" alt="Nursery kid" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
               </div>
               <div class="bg-[#FF9900] text-white py-2 text-center">
                 <h3 class="font-black text-base">Nursery</h3>
@@ -325,7 +258,7 @@
             <!-- Card 3: Junior KG -->
             <div class="rounded-2xl border border-sky-100 overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow group flex flex-col">
               <div class="h-32 bg-sky-50 overflow-hidden relative">
-                <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=400&q=80" alt="Junior KG kid" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                <img src="./images/jun.jpeg" alt="Junior KG kid" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
               </div>
               <div class="bg-brand-blue text-white py-2 text-center">
                 <h3 class="font-black text-base">Junior KG</h3>
@@ -516,8 +449,8 @@
             <div class="md:col-span-4 flex justify-center">
               <div class="w-36 h-36 rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-slate-200">
                 <img 
-                  src="images\Sanjay Singh.jpg" 
-                  alt="Director Mr. Sanjay Singh" 
+                  src="images\MissPriti Singh.jpg" 
+                  alt="Director Mrs. Priti Singh" 
                   class="w-full h-full object-cover object-top"
                 />
               </div>
@@ -526,11 +459,11 @@
             <div class="md:col-span-8 space-y-2">
               <div class="flex items-center gap-2">
                 <i class="fa-solid fa-quote-left text-brand-pink text-xl"></i>
-                <h4 class="text-lg font-black text-brand-navy">Mr. Sanjay Singh</h4>
+                <h4 class="text-lg font-black text-brand-navy">Mrs. Priti Singh</h4>
               </div>
               <span class="text-xs font-black text-brand-blue uppercase tracking-wider block">Founder & Director</span>
               <p class="text-xs text-slate-600 font-semibold leading-relaxed pt-1">
-                "With a vision to make future skills accessible from the earliest years, Mr. Sanjay Singh founded MIIT Robo AI Preschool to bring innovation, creativity and technology into early childhood education. His mission is to empower every child with 21st century skills through joyful and meaningful learning."
+                "With a vision to make future skills accessible from the earliest years,Mrs. Priti Singh founded MIIT Robo AI Preschool to bring innovation, creativity and technology into early childhood education. His mission is to empower every child with 21st century skills through joyful and meaningful learning."
               </p>
             </div>
           </div>
